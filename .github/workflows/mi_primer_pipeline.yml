@@ -1,1 +1,10 @@
+name: Mi Primer Pipeline de Prueba
 
+on: [push]
+
+jobs:
+  imprimir_saludo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Saludar en la consola
+        run: echo "Esto es un ejemplo de prueba para verificar si funciona esto"
